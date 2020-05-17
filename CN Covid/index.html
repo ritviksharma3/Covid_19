@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CN Covid-19</title>
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+        <!--START OF STYLING CSS-->
+        <style>
+            .header-navbar-conatiner{
+                background-color: #0c0c3a;
+                position: fixed;
+                padding: 20px;
+                width: 100%;
+                text-decoration: none;
+            }
+            .header-navbar-container-content a{
+                color: #ffffff;
+                margin: 12px;
+                font-size: 25px;
+                
+            }
+
+            ul{
+                list-style-type: none;
+                float: right;
+            
+            }
+            ul li{
+                display: inline-block;
+            }
+
+            /* START OF CONTAINER */
+            .container{
+                padding-top: 300px;
+                margin-left: 300px;
+            }
+            
+            .bg-blue{
+                border: thin solid black;
+                width:150px;
+                height:150px;
+                text-align: center;
+                background-image: linear-gradient(#2193b0,#6dd5ed);
+                word-wrap: break-word; /* words won't go from the boundry */
+                margin: 15px 20px auto;
+                /* top, left, bottom*/
+                padding: 30px 20px 30px;
+                float: left;
+            }
+
+            .bg-green{
+                border: thin solid black;
+                width:150px;
+                height:150px;
+                text-align: center;
+                background-image: linear-gradient(#11998e,#38ef7d);
+                word-wrap: break-word; /* words won't go from the boundry */
+                margin: 15px 20px auto;
+                /* top, left, bottom*/
+                padding: 30px 20px 30px;
+                float: left;
+            }
+
+            .bg-red{
+                border: thin solid black;
+                width:150px;
+                height:150px;
+                text-align: center;
+                background-image: linear-gradient(#ff9966,#ff5e62);
+                word-wrap: break-word; /* words won't go from the boundry */
+                margin: 15px 20px auto;
+                /* top, left, bottom*/
+                padding: 30px 20px 30px;
+                float: left;
+            }
+
+            .bg-orange{
+                border: thin solid black;
+                width:150px;
+                height:150px;
+                text-align: center;
+                background-image: linear-gradient(#EF3B36,#ffffff);
+                word-wrap: break-word; /* words won't go from the boundry */
+                margin: 15px 20px auto;
+                /* top, left, bottom*/
+                padding: 30px 20px 30px;
+                float: left;
+            }
+
+            .status-update{
+                color: white;
+                text-align: center;
+                padding-top:10px;
+            }
+
+            .home-page-wrapper{
+                background-image: linear-gradient(#bdc3c7,#2c3e50); 
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+            
+        /*START OF FOOTER CSS*/
+                .footer-navbar{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 15px;
+                background-color: #7d7d8b;
+                color: white;
+            }
+            ul li{
+                display: inline-block;
+            }
+            footer a {
+                display: none;
+            }
+            .footer-social-link{
+                list-style-type: none;
+            }
+            .copyright-text{
+                margin-top: 2px;
+                list-style-type: none;
+            }
+        /* END OF FOOTER CSS */
+        </style>
+        <!--END OF STYLING CSS-->
+    </head>
+    <body>
+        <!--START OF HEADER-->
+        <header>
+            <div class="header-navbar-conatiner">
+                <div class="header-navbar-container-content" >
+                    <a href="#" target="_self"> COVID - 19 Crisis </a>
+                    <ul>
+                        <li><a href="#" target="_blank">Home</a></li>
+                        <li><a href="#" target="_blank">About</a></li>
+                        <li><a href="#" target="_blank">FAQs</a></li>
+                        <li><a href="#" target="_blank">Conatct Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--END OF HEADER-->
+        <!--START OF HOME PAGE ANIMATION-->
+        <div class="home-page-wrapper">
+            <div class="home-page-wrapper-content">
+                <div class="home-page-wrapper-content-row">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-xs-12">
+                        <div class="site-stats-count">
+                            <ul>    
+                                <li class="bg-blue">
+                                <!-- <img src="assets/images/icon-infected.png" alt="Active Status"> -->
+                                <strong>53035</strong><br><br>
+                                <span>Active Cases</span>
+                                </li>
+                                <li class="bg-green">
+                                <!-- <img src="assets/images/icon-inactive.png" alt="Inactive Status"> -->
+                                <strong>30152</strong><br><br>
+                                <span class="mob-hide">Cured / Discharged </span>
+                                <!-- <span class="mob-show">Cured/ </span>
+                                <span class="mob-show">Discharged </span> -->
+                                </li>								
+                                <li class="bg-red">
+                                <!-- <img src="assets/images/icon-death.png" alt="Death Status"> -->
+                                <strong>2752</strong> <br><br>
+                                <span>Deaths  </span>
+                                
+                                </li>
+                                <li class="bg-orange">
+                                <!-- <img src="assets/images/icon-active.png" alt="Inactive Status"> -->
+                                <strong>1</strong> <br><br>
+                                <span>Migrated</span>
+                                </li>
+                                <li class="icon-dashboard">
+                                <!-- <a class="trigger-advisories" href="#site-advisories"><img src="assets/images/icon-advisories.png" alt="Advisories"></a>
+                                <a class="trigger-state" href="#state-data"><img src="assets/images/icon-state.png" alt="State Data"></a> -->
+                                </li>
+                                </ul>
+                                <br><br>
+                                <div class="status-update">
+                                <h2>COVID-19 INDIA <span>as on : 16 May 2020, 08:00 IST (GMT+5:30)</span></h2>
+                                </div>
+                        </div><!--site-stats-count-->
+                        </div><!--col-xs-->
+                        </div><!--row-->
+                        </div><!--container-->
+                </div>
+            </div>
+        </div>
+        <!--END OF HOME PAGE ANIMATION-->
+
+        
+        <!--START OF FOOTER-->
+        <footer class="footer-navbar">
+            <div class="footer-container">
+                <div class="footer-navbar-container">
+                    <div class="footer-navbar-container-content">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black-color">
+                <div class="footer-social-link">
+                    <ul class="footer-social-link-content">
+                        <li class="logo-link">    
+                            <a href="https://twitter.com/ritvikdevelops" title="Ritvik on Twitter" style="color: #959da5;">
+                                <svg role="img" height="18" width="22" class="icon-twitter icon" fill="currentColor" aria-label="Ritvik Twitter link">
+                                  <use xlink:href="assets\Twitter_Logo_WhiteOnImage.svg#icon-twitter"></use>
+                                </svg>
+                              </a>      
+                        </li>
+                        <li class="logo-link">    
+                            <a href="https://github.com/ritviksharma3" title="Ritvik on Github" style="color: #959da5;">
+                                <img src="assets\GitHub-Mark-64px.png" alt="Ritvik on Github" style="color: #959da5;">     
+                            </a>      
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright-text">
+                    <li class="">
+                        © 2020 CN Covid. All Rights Reserved.
+                    </li>
+                </div>
+            </div>
+        </footer>
+        <!--END OF FOOTER-->
+
+        <iframe width="1024" height="576" src="https://app.developer.here.com/coronavirus/" frameborder="0"></iframe>
+    </body>
+</html>
