@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background-color: rgba(192,7,84,0.9);
+}
+
+h1{
+    color: yellow;
+    text-align: center;
+    font-size: 5rem;
+}
+
+hr{
+    color: yellow;
+}
+
+.heading{
+   margin-top: 5%;
+}
+
+
+.header-navbar-container{
+    background-color: #0c0c3a;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    margin-top: 0;
+    top: 0;
+}
+.header-navbar-container-content a{
+    color: #ffffff;
+    margin: 12px;
+    font-size: 25px;
+    
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+
+}
+ul li{
+    display: inline-block;
+}
+
+
+html{
+    font-family: 'Roboto',sans-serif;
+    font-size:10px;
+    box-sizing: border-box;
+}
+
+section{
+    width:100%;
+    height:180vh;
+    background-color: rgba(221, 14, 100, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 80rem;
+    margin:0 auto;
+    padding: 0 1.5rem;
+    display: block;
+}
+.Faq-item{
+    background-color:#283042;
+    border-radius: .8rem;
+    margin-bottom: 0.9rem;
+    padding: 1.2rem;
+    box-shadow:.8rem 4px .8rem rgba(255,255,255,.8);
+}
+.Faq-link{
+    font-size: 1.4rem;
+    color: rgba(250, 255, 255, 0.8);
+    text-decoration:none;
+    background-color:#283042;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.Faq-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
+
+.Faq-link .ion-nd-remove{
+    display:none;
+}
+
+.answer{
+    max-height:0;
+    overflow: hidden;
+    position: relative;
+    background-color: #e3e6ee;
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content:"";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #0fc468;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    color: rgba(255,255,255,.6)
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+ 
+.Faq-item:hover .answer{ 
+    max-height:20rem;
+} 
+
+.Faq-item:hover .Faq-link .ion-icon name = "chevron-down"{
+    display:none;
+}
+
